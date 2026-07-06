@@ -1,10 +1,13 @@
 "use client"
 
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 import { toast } from "react-toastify";
 
 function Table({cart}) {
-
+const [fullName, setFullName] = useState("");
+const [phone, setPhone] = useState("");
+const [address, setAddress] = useState("");
 const router = useRouter()
 
     const increase =async(id :string)=>{
@@ -60,6 +63,28 @@ if (cart.length === 0) {
 const totalPrice = cart.reduce((total , item)=>{
 return total+ item.product.price * item.quantity
 },0)
+
+
+const handleOrder = async()=>{
+  const res=await fetch("/api/orders",{
+    method:"POST",
+    headers:{
+      "Content-Type":"application/json"
+    },
+    body: JSON.stringify({fullName , address, phone})
+  })
+  const data = await res.json()
+  if(res.ok){
+    toast.success(data.message)
+    router.refresh()
+  } else {
+    toast.error(data.message);
+  }
+}
+
+
+
+
   return (
     <>
    
@@ -120,7 +145,39 @@ return total+ item.product.price * item.quantity
 </div>
 <div className='px-10 my-10 flex flex-col gap-15 justify-between'>
    <p> جمع کل : {totalPrice.toLocaleString()} تومان</p>
-   <button className='cursor-pointer bg-green-700 text-white rounded'>پرداخت</button>
+
+
+
+<div className="max-w-[70%] m-auto px-10 mt-10 space-y-4">
+
+  <input
+    type="text"
+    placeholder="نام و نام خانوادگی"
+    value={fullName}
+    onChange={(e)=>setFullName(e.target.value)}
+    className="border rounded w-full p-2"
+  />
+
+  <input
+    type="text"
+    placeholder="شماره تماس"
+    value={phone}
+    onChange={(e)=>setPhone(e.target.value)}
+    className="border rounded w-full p-2"
+  />
+
+  <textarea
+    placeholder="آدرس کامل"
+    value={address}
+    onChange={(e)=>setAddress(e.target.value)}
+    className="border rounded w-full p-2 h-32 resize-none"
+  />
+</div>
+
+
+   <button
+   onClick={handleOrder}
+   className='cursor-pointer bg-green-700 text-white rounded'>پرداخت</button>
 </div>
     </>
   )
