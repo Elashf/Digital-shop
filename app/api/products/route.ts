@@ -64,7 +64,7 @@ export async function PUT(request: Request) {
  try {
    const formData = await request.formData()
   const img = formData.get("img")
-if(!img){
+if(!img ||  !(img instanceof File)){
   return Response.json({message:"Product has not image"},{status:400})
 }
 

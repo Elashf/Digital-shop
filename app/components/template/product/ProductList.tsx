@@ -16,7 +16,7 @@ type Props ={
 const [selectedProduct, setSelectedProduct] = useState<any>(null);
   const router = useRouter()
   
-  const handleEdit = (product)=>{
+  const handleEdit = (product :any)=>{
     setOpenEditModal(true)
     setName(product.name)
 setPrice(product.price)
