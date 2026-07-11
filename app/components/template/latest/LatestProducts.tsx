@@ -1,11 +1,15 @@
 import Link from "next/link";
+import Pagination from "../../modules/Pagination";
 
 
 type Props = {
   products: any[];
+  currentPage: number;
+  totalPages: number;
 };
 
-function LatestProducts({ products }: Props) {
+function LatestProducts({ products ,currentPage,
+totalPages}: Props) {
   return (
     <div className="bg-white mt-15">
       <div className="flex justify-between px-9 font-bold">
@@ -24,7 +28,7 @@ function LatestProducts({ products }: Props) {
       >
         <h2 className="sr-only">Products</h2>
 
-        <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+        <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8 ">
           {products.map((product) => (
             <div key={product._id}>
               <a href={`/products/${product._id}`} className="group ">
@@ -41,6 +45,8 @@ function LatestProducts({ products }: Props) {
             </div>
           ))}
         </div>
+       <Pagination currentPage={currentPage}
+  totalPages={totalPages}/>
       </div>
     </div>
   );

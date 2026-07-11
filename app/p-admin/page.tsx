@@ -1,5 +1,6 @@
 
 import { dbConnect } from "@/lib/dbConnect";
+import orderModel from "@/models/Order";
 import productModel from "@/models/Products";
 import userModel from "@/models/Users";
 import { authUser } from "@/utils/authUser";
@@ -11,6 +12,12 @@ async function PAdmin() {
   await dbConnect()
   const products = await productModel.find({}) 
   const users = await userModel.find({}) 
+  const orders = await orderModel.find({})
+
+  const orderDelivered = await orderModel.find({status:"Delivered"})
+  const totalSales = orderDelivered.reduce((sum,order)=>
+  sum + order.totalPrice ,0
+  )
 
   const user = await authUser()
   if(!user || user.role !=="admin"){
@@ -44,12 +51,12 @@ async function PAdmin() {
 
           <div className="bg-white shadow-lg rounded-xl p-5">
             <p className="text-gray-500">سفارشات</p>
-            <h2 className="text-3xl font-bold mt-2">48</h2>
+            <h2 className="text-3xl font-bold mt-2">{orders.length}</h2>
           </div>
 
           <div className="bg-white shadow-lg rounded-xl p-5">
             <p className="text-gray-500">فروش کل</p>
-            <h2 className="text-3xl font-bold mt-2">12M</h2>
+            <h2 className="text-3xl font-bold mt-2"> {totalSales/1000000}M </h2>
           </div>
         </div>
 
@@ -67,6 +74,11 @@ async function PAdmin() {
             <Link href="/p-admin/users">
             <button className="bg-green-600 text-white px-4 py-2 rounded-lg cursor-pointer">
               مدیریت کاربران
+            </button>
+            </Link>
+            <Link href="/p-admin/orders">
+            <button className="bg-orange-600 text-white px-4 py-2 rounded-lg cursor-pointer">
+               سفارشات
             </button>
             </Link>
             

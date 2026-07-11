@@ -2,7 +2,7 @@ import { dbConnect } from "@/lib/dbConnect";
 import cartModel from "@/models/Cart";
 
 import orderModel from "@/models/Order";
-import wishlistModel from "@/models/Wishlist";
+
 import { authUser } from "@/utils/authUser";
 import Link from "next/link";
 import { redirect } from "next/navigation";
@@ -17,7 +17,7 @@ async function PUser() {
   }
 
   const orders = await orderModel.find({ user: user._id });
-  const wishlist = await wishlistModel.find({ user: user._id });
+  
   const cart = await cartModel.find({ user: user._id });
 
   return (
@@ -33,10 +33,7 @@ async function PUser() {
           <h2 className="text-3xl font-bold mt-2">{orders.length}</h2>
         </div>
 
-        <div className="bg-white shadow-lg rounded-xl p-5">
-          <p className="text-gray-500">علاقه‌مندی‌ها</p>
-          <h2 className="text-3xl font-bold mt-2">{wishlist.length}</h2>
-        </div>
+      
 
         <div className="bg-white shadow-lg rounded-xl p-5">
           <p className="text-gray-500">سبد خرید</p>
@@ -54,13 +51,6 @@ async function PUser() {
             className="bg-blue-600 text-white px-4 py-2 rounded-lg"
           >
             سفارش‌های من
-          </Link>
-
-          <Link
-            href="/wishlist"
-            className="bg-pink-600 text-white px-4 py-2 rounded-lg"
-          >
-            علاقه‌مندی‌ها
           </Link>
 
           <Link
