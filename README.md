@@ -4,6 +4,8 @@
 A full-stack e-commerce web application built with **Next.js**, **TypeScript**, **MongoDB**, and **Tailwind CSS**.  
 The project includes both a customer-facing storefront and a complete admin dashboard for managing the store.
 
+https://digital-online-shop.netlify.app/
+
 ## Features:
 
 ### Customer
