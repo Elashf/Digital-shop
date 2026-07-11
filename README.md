@@ -1,37 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Digital Shop
 
-First, run the development server:
+A full-stack e-commerce web application built with **Next.js**, **TypeScript**, **MongoDB**, and **Tailwind CSS**.  
+The project includes both a customer-facing storefront and a complete admin dashboard for managing the store.
+
+## Features:
+
+### Customer
+
+- User authentication (Register / Login)
+- Browse products
+- Search products
+- Product details
+- Shopping cart
+- Wishlist
+- Order placement
+- Order history
+- Comments & Reviews
+- User dashboard
+
+### Admin
+
+- Dashboard
+- Product management (Create, Update, Delete)
+- User management
+- Order management
+- Comment management
+- View store statistics
+
+## Tech Stack
+
+- Next.js (App Router)
+- TypeScript
+- MongoDB
+- Mongoose
+- Tailwind CSS
+- JWT Authentication
+- React Toastify
+- Swiper
+- AOS
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Elashf/Digital-shop.git
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Create a `.env.local` file and add the required environment variables:
+
+```env
+MONGODB_URI=your_mongodb_uri
+JWT_SECRET=your_secret
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Demo Admin Account
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+If you'd like to explore the admin dashboard and all management features, you can log in using the following account:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**Email**
 
-## Learn More
+```text
+e@gmail.com
+```
 
-To learn more about Next.js, take a look at the following resources:
+**Password**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```text
+e123
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+ This account is provided for demonstration purposes only.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-"# Digital-shop" 
+Developed by Ela Farahani.
