@@ -178,7 +178,7 @@ function UsersList({ users }: Props) {
                     "
           />
           <label>نقش کاربر</label>
-          <Select value={role} onValueChange={setRole}>
+          <Select value={role} onValueChange={(value) => setRole(value ?? "")}>
             <SelectTrigger>
               <SelectValue placeholder="نقش کاربر" />
             </SelectTrigger>
