@@ -46,7 +46,7 @@ export default function Hero() {
 
           <div className="mt-10 flex gap-4 flex-wrap">
 
-            <Button size="lg" asChild>
+            <Button size="lg" >
 
               <Link className="cursor-pointer" href="/products">
 
@@ -58,7 +58,7 @@ export default function Hero() {
 
             </Button>
 
-            <Button size="lg" variant="outline" asChild>
+            <Button size="lg" variant="outline" >
 
               <Link className="cursor-pointer" href="/products">
 
