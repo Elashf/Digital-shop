@@ -4,7 +4,11 @@ import Navbar from "./components/modules/Navbar";
 import Footer from "./components/modules/Footer";
 import { ToastContainer } from "react-toastify";
 import Aos from "@/utils/Aos";
+import { Geist } from "next/font/google";
+import { cn } from "@/lib/utils";
+import { Providers } from "./components/modules/ThemeProvider";
 
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 const vazir = localFont({
   src: [
@@ -36,15 +40,17 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="fa" dir="rtl"
+      lang="fa" dir="rtl" suppressHydrationWarning className={cn("font-sans", geist.variable)}
 
     >
-      <body className={vazir.className}>
+      <body className={`${vazir.className} bg-white dark:bg-gray-900`}>
+        <Providers>
         <Navbar/>
         <Aos />
         {children}
         <ToastContainer position="top-right" autoClose={3000}/>
         <Footer/>
+        </Providers>
         </body>
         
     </html>

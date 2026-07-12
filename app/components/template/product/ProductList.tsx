@@ -59,7 +59,7 @@ router.refresh()
   return (
     <div className="text-xs md:text-md col-span-2 mt-10 overflow-x-auto">
             <table className="table-auto w-full border border-gray-300 text-center">
-              <thead className="bg-gray-100">
+              <thead className="-bg-white dark:bg-gray-900">
                 <tr>
                   <th className="border border-gray-300 p-3">نام محصول</th>
                   <th className="border border-gray-300 p-3">قیمت</th>
@@ -72,7 +72,7 @@ router.refresh()
                 {products?.map((product)=>(
                  
                  
-                  <tr key={product._id} className="hover:bg-gray-50">
+                  <tr key={product._id} className="hover:bg-gray-500">
                   <td className="border border-gray-300 p-3">{product.name} </td>
                   <td className="border border-gray-300 p-3">{product.price.toLocaleString()}</td>
                   <td className="border border-gray-300 p-3">{product.stock}</td>
@@ -93,7 +93,7 @@ router.refresh()
               </tbody>
             </table>
              {openEditModal && ( <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4">
-      <div className="w-full max-w-xl rounded-xl bg-white p-6 shadow-xl">
+      <div className="w-full max-w-xl rounded-xl bg-white dark:bg-gray-900 p-6 shadow-xl">
         
         <div className="mb-6 flex items-center justify-between">
           <h2 className="text-xl font-bold">

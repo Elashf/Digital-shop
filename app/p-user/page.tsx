@@ -28,21 +28,21 @@ async function PUser() {
 
       {/* آمار */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
-        <div className="bg-white shadow-lg rounded-xl p-5">
+        <div className="bg-white dark:bg-gray-900 shadow-lg rounded-xl p-5">
           <p className="text-gray-500">سفارش‌های من</p>
           <h2 className="text-3xl font-bold mt-2">{orders.length}</h2>
         </div>
 
       
 
-        <div className="bg-white shadow-lg rounded-xl p-5">
+        <div className="bg-white dark:bg-gray-900 shadow-lg rounded-xl p-5">
           <p className="text-gray-500">سبد خرید</p>
           <h2 className="text-3xl font-bold mt-2">{cart.length}</h2>
         </div>
       </div>
 
       {/* دسترسی سریع */}
-      <div className="bg-white shadow-lg rounded-xl p-5 mb-10">
+      <div className="bg-white dark:bg-gray-900 shadow-lg rounded-xl p-5 mb-10">
         <h2 className="font-bold text-lg mb-4">دسترسی سریع</h2>
 
         <div className="flex flex-wrap gap-3">
@@ -70,7 +70,7 @@ async function PUser() {
       </div>
 
       {/* آخرین سفارش‌ها */}
-      <div className="bg-white shadow-lg rounded-xl p-5">
+      <div className="bg-white dark:bg-gray-900 shadow-lg rounded-xl p-5">
         <h2 className="font-bold text-lg mb-4">آخرین سفارش‌های من</h2>
 
         {orders.length === 0 ? (
@@ -79,7 +79,7 @@ async function PUser() {
           <div className="overflow-x-auto">
             <table className="w-full text-center border">
               <thead>
-                <tr className="bg-gray-100">
+                <tr className="bg-white dark:bg-gray-900">
                   <th className="border p-3">شماره سفارش</th>
                   <th className="border p-3">مبلغ</th>
                   <th className="border p-3">وضعیت</th>

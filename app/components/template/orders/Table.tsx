@@ -42,10 +42,10 @@ const router = useRouter()
 
 
   return (
-    <div className="overflow-x-auto bg-white rounded-xl shadow-lg">
+    <div className="overflow-x-auto bg-white dark:bg-gray-900 rounded-xl shadow-lg">
       <table className="w-full text-center">
         <thead className="bg-gray-100">
-          <tr>
+          <tr className="bg-white dark:bg-gray-900 border">
             <th className="p-4">مشتری</th>
 
             <th className="p-4">تعداد محصولات</th>
@@ -62,8 +62,8 @@ const router = useRouter()
 
         <tbody>
           {orders.map((order: any) => (
-            <tr key={order._id} className="border-b hover:bg-gray-50">
-              <td className="p-4">{order.user.name}</td>
+            <tr key={order._id} className="border-b hover:bg-gray-500">
+              <td className="p-4">{order.user?.name}</td>
 
               <td className="p-4">{order.items.length}</td>
 
@@ -89,7 +89,7 @@ const router = useRouter()
       </table>
       {openModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-3 ">
-          <div className="w-full max-w-xl rounded-xl bg-white p-6 shadow-xl">
+          <div className="w-full max-w-xl rounded-xl bg-white dark:bg-gray-900 p-6 shadow-xl">
             <div className="mb-4 flex items-center justify-between">
               <h2 className="text-md font-bold">مدیریت سفارش</h2>
               <button

@@ -1,5 +1,6 @@
 "use client"
 
+import { Input } from "@/components/ui/input"
 import { useRouter } from "next/navigation"
 import { useState } from "react"
 import { toast } from "react-toastify"
@@ -34,25 +35,25 @@ password})
     <div className=' m-auto mt-25 border border-gray-200 shadow-xl px-4 w-80 h-130 flex flex-col gap-5 py-10 '>
         <h1 className="text-center mb-5 font-bold text-2xl text-green-900">Wellcome</h1>
       <label>نام :</label>
-<input
+<Input
 value={name}
 onChange={(e)=> setName(e.target.value)}
-className='border border-blue-300 shadow-xl p-2 rounded-md'
+className='w-full'
 placeholder='نام'
 />
       <label>ایمیل :</label>
-<input
+<Input
 value={email}
 onChange={(e)=> setEmail(e.target.value)}
-className='border border-blue-300 shadow-xl p-2 rounded-md'
+className='w-full'
 placeholder='ایمیل'
 />
 <label>پسورد :</label>
-<input
+<Input
 type="password"
 value={password}
 onChange={(e)=> setPassword(e.target.value)}
-className='border border-blue-300 shadow-xl p-2 rounded-md'
+className='w-full'
 placeholder='رمز عبور'
 />
 <button onClick={register} className='mt-10 cursor-pointer bg-green-500 w-30 mx-auto py-1 rounded-xl border hover:bg-green-800 hover:text-white'>ثبت نام</button>

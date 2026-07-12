@@ -1,6 +1,7 @@
 import { dbConnect } from "@/lib/dbConnect";
 import productModel from "@/models/Products";
 import ProductsSection from "./components/template/latest/ProductsSection";
+import Hero from "./components/template/hero/Hero";
 
 type Props = {
   searchParams: Promise<{
@@ -30,10 +31,13 @@ export default async function Home({ searchParams }: Props) {
   const totalPages = Math.ceil(totalProducts / limit);
 
   return (
+    <>
+    <Hero/>
     <ProductsSection
       products={JSON.parse(JSON.stringify(products))}
       currentPage={currentPage}
       totalPages={totalPages}
     />
+    </>
   );
 }

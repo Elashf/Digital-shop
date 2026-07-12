@@ -37,31 +37,29 @@ async function PAdmin() {
           به پنل مدیریت فروشگاه خوش آمدید.
         </p>
 
-        {/* آمار */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
-          <div className="bg-white shadow-lg rounded-xl p-5">
+          <div className="bg-white dark:bg-gray-900 shadow-lg rounded-xl p-5">
             <p className="text-gray-500">محصولات</p>
             <h2 className="text-3xl font-bold mt-2">{products.length}</h2>
           </div>
 
-          <div className="bg-white shadow-lg rounded-xl p-5">
+          <div className="bg-white dark:bg-gray-900 shadow-lg rounded-xl p-5">
             <p className="text-gray-500">کاربران</p>
             <h2 className="text-3xl font-bold mt-2">{users.length}</h2>
           </div>
 
-          <div className="bg-white shadow-lg rounded-xl p-5">
+          <div className="bg-white dark:bg-gray-900 shadow-lg rounded-xl p-5">
             <p className="text-gray-500">سفارشات</p>
             <h2 className="text-3xl font-bold mt-2">{orders.length}</h2>
           </div>
 
-          <div className="bg-white shadow-lg rounded-xl p-5">
+          <div className="bg-white dark:bg-gray-900 shadow-lg rounded-xl p-5">
             <p className="text-gray-500">فروش کل</p>
             <h2 className="text-3xl font-bold mt-2"> {totalSales/1000000}M </h2>
           </div>
         </div>
 
-        {/* عملیات سریع */}
-        <div className="bg-white shadow-lg rounded-xl p-5 mb-10">
+        <div className="bg-white dark:bg-gray-900 shadow-lg rounded-xl p-5 mb-10">
           <h2 className="font-bold text-lg mb-4">دسترسی سریع</h2>
 
           <div className="flex flex-wrap gap-3">
@@ -85,16 +83,15 @@ async function PAdmin() {
           </div>
         </div>
 
-        {/* آخرین محصولات */}
-        <div className="bg-white shadow-lg rounded-xl p-5">
+        <div className="bg-white dark:bg-gray-900 shadow-lg rounded-xl p-5">
           <h2 className="font-bold text-lg mb-4">
             آخرین محصولات
           </h2>
 
           <div className="overflow-x-auto">
-            <table className="w-full text-center border">
-              <thead>
-                <tr className="bg-gray-100">
+            <table className="w-full text-center border ">
+              <thead >
+                <tr className="bg-white dark:bg-gray-900">
                   <th className="p-3 border">نام محصول</th>
                   <th className="p-3 border">قیمت</th>
                   <th className="p-3 border">موجودی</th>

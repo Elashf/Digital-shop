@@ -109,7 +109,7 @@ function Table({ cart }: Props) {
       <div className="overflow-x-auto mt-10 px-4 md:px-10">
         <table className="table-auto w-full border border-gray-300 text-center text-xs md:text-base">
           <thead className="bg-gray-100">
-            <tr>
+            <tr className="bg-white dark:bg-gray-900">
               <th className="border border-gray-300 p-3">نام محصول</th>
               <th className="border border-gray-300 p-3">قیمت</th>
               <th className="border border-gray-300 p-3">تعداد</th>
@@ -120,7 +120,7 @@ function Table({ cart }: Props) {
 
           <tbody>
             {cart.map((item) => (
-              <tr key={item._id} className="hover:bg-gray-50">
+              <tr key={item._id} className="hover:bg-gray-500">
                 <td className="border border-gray-300 p-3">
                   {item.product.name}
                 </td>

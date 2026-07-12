@@ -28,7 +28,7 @@ async function OrdersPage() {
       </p>
 
       {orders.length === 0 ? (
-        <div className="bg-white rounded-xl shadow-lg p-10 text-center">
+        <div className="bg-white dark:bg-gray-900 rounded-xl shadow-lg p-10 text-center">
           <p className="text-gray-500">
             هنوز سفارشی ثبت نکرده‌اید.
           </p>
@@ -40,7 +40,7 @@ async function OrdersPage() {
 
             <div
               key={order._id}
-              className="bg-white rounded-xl shadow-lg p-6"
+              className="bg-white dark:bg-gray-900 rounded-xl shadow-lg p-6"
             >
 
               <div className="flex justify-between items-center border-b pb-4 mb-4">
