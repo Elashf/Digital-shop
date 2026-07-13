@@ -19,7 +19,7 @@ export default async function Home({ searchParams }: Props) {
   const limit = 8;
 
   const skip = (currentPage - 1) * limit;
-
+  const product = await productModel.findOne().sort({_id:-1})
   const products = await productModel
     .find({})
     .sort({ _id: -1 })
@@ -32,7 +32,7 @@ export default async function Home({ searchParams }: Props) {
 
   return (
     <>
-    <Hero/>
+    <Hero product={JSON.parse(JSON.stringify(product))}/>
     <ProductsSection
       products={JSON.parse(JSON.stringify(products))}
       currentPage={currentPage}

@@ -1,5 +1,10 @@
 import productModel from '@/models/Products'
-import React from 'react'
+import type { Metadata } from "next";
+
+export const metadata : Metadata={
+  title:"Products | Digital shop",
+  description: "Browse all products in Digital shop"
+}
 
 async function Products() {
   const products = await productModel.find({}).sort({_id:-1})
@@ -13,7 +18,7 @@ async function Products() {
     <div className=" grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 lg:grid-cols-4 xl:gap-x-8">
       {products.map((product)=>(
         <div key={product._id}>
-<a href="#" className="group">
+<a href={`/products/${product._id}`} className="group">
         <img src={product.img} className="w-full aspect-square object-contain rounded-lg group-hover:opacity-75 transition" />
         <h3 className="mt-4 text-sm ">{product.name}</h3>
         <p className="mt-1 text-lg font-medium ">{product.price.toLocaleString()}</p>

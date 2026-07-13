@@ -1,9 +1,52 @@
+"use client"
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { FaLaptop, FaMobileAlt, FaHeadphones } from "react-icons/fa";
+import { toast } from "react-toastify";
+import { useRouter } from "next/navigation";
 
-export default function Hero() {
+type Props = {
+  product: {
+    _id: string;
+    name: string;
+    img: string;
+    price: number;
+  };
+};
+
+export default function Hero({ product }: Props) {
+
+  const router = useRouter()
+
+  const addToCart = async()=>{
+    try {
+    const res = await fetch("/api/cart", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        productID: product._id,
+        quantity:1
+      }),
+    });
+
+    const data = await res.json();
+
+    if (!res.ok) {
+      toast.error(data.message || "خطا در افزودن به سبد خرید");
+      return;
+    }
+
+    toast.success("به سبد خرید اضافه شد");
+
+    router.refresh();
+  } catch {
+    toast.error("خطای سرور");
+  }
+  }
+
   return (
     <section className="relative overflow-hidden py-20">
       <div className="absolute left-0 top-0 h-72 w-72 rounded-full bg-indigo-500/20 blur-3xl" />
@@ -106,12 +149,12 @@ export default function Hero() {
           <div className="w-96 rounded-3xl bg-white dark:bg-gray-900 shadow-2xl p-8 border">
 
             <img
-              src="images/hero.jpg"
+              src={product.img}
               className="w-full object-contain"
             />
 
             <h2 className="mt-6 text-2xl font-bold">
-              MacBook Pro M4
+              {product.name}
             </h2>
 
             <p className="mt-2 text-gray-500">
@@ -122,11 +165,11 @@ export default function Hero() {
 
               <span className="text-2xl font-bold text-indigo-600">
 
-                89,900,000
+                {product.price.toLocaleString()}
 
               </span>
 
-              <Button>
+              <Button className="cursor-pointer" onClick={addToCart}>
 
                 خرید
 

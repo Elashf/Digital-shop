@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function Footer() {
   return (
     <footer className="border-t mt-16 bg-slate-50 bg-white dark:bg-gray-900">
@@ -14,10 +16,12 @@ function Footer() {
           <div>
             <h3 className="font-bold text-lg mb-4">لینک‌های سریع</h3>
             <ul className="space-y-2 text-gray-600">
-              <li>صفحه اصلی</li>
-              <li>محصولات</li>
-              <li>سبد خرید</li>
-              <li>پنل کاربری</li>
+              <li><Link href="/">صفحه اصلی</Link></li>
+              <li><Link href="/products">محصولات</Link></li>
+              <li><Link href="/cart">سبد خرید</Link></li>
+              <li><Link href="/p-user">پنل کاربری</Link></li>
+              
+              
             </ul>
           </div>
 
