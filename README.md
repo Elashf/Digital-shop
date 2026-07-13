@@ -41,6 +41,7 @@ https://digital-online-shop.netlify.app/
 - React Toastify
 - Swiper
 - AOS
+- ShadCN
 
 ## Installation
 
