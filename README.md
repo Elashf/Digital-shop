@@ -4,6 +4,7 @@
 A full-stack e-commerce web application built with **Next.js**, **TypeScript**, **MongoDB**, and **Tailwind CSS**.  
 The project includes both a customer-facing storefront and a complete admin dashboard for managing the store.
 
+#Live Demo:
 https://digital-online-shop.netlify.app/
 
 ##Screen shots:
@@ -108,5 +109,10 @@ e123
 
  This account is provided for demonstration purposes only.
 
+## Deployment
+
+The project is deployed on Netlify:
+https://digital-online-shop.netlify.app
+Note: Due to regional network restrictions, the live demo may not be accessible from some locations.
 
 Developed by Ela Farahani.
