@@ -1,6 +1,3 @@
-<img width="1877" height="863" alt="c" src="https://github.com/user-attachments/assets/e70ed2c9-208f-438d-af2d-5bb9681e3c0c" />
-<img width="1888" height="920" alt="b" src="https://github.com/user-attachments/assets/0d14fc62-921b-41d9-97dd-3c1321ef6a92" />
-<img width="1888" height="920" alt="b" src="https://github.com/user-attachments/assets/89ec5900-73dc-41d7-ab91-9fa439127dda" />
 
 # Digital Shop
 
@@ -10,9 +7,18 @@ The project includes both a customer-facing storefront and a complete admin dash
 https://digital-online-shop.netlify.app/
 
 ##Screen shots:
-<img width="1200" height="582" alt="a" src="https://github.com/user-attachments/assets/e28624c0-ae6b-4bc9-853b-4a95e758103c" />
-
-
+home page:
+<img width="1200" height="596" alt="f" src="https://github.com/user-attachments/assets/86f30490-f9c8-4226-8c1c-a297d914e7f8" />
+p-admin:
+<img width="1200" height="583" alt="e" src="https://github.com/user-attachments/assets/4e194654-33be-4271-a921-fd44bad0fe6c" />
+p-admin/addProducts:
+<img width="1200" height="608" alt="d" src="https://github.com/user-attachments/assets/e2aa8281-fc18-4868-b3c2-66f0a768a324" />
+p-admin/orders:
+<img width="1200" height="551" alt="c" src="https://github.com/user-attachments/assets/87093f76-c4e7-4c78-8cc7-0298f35b5634" />
+cart:
+<img width="1200" height="584" alt="b" src="https://github.com/user-attachments/assets/ca9cacfc-3973-440c-9afc-8b196d758459" />
+product details:
+<img width="1200" height="582" alt="a" src="https://github.com/user-attachments/assets/98436888-9a0b-46b9-8d1d-836086d10871" />
 
 ## Features:
 
