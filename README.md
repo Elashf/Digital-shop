@@ -61,6 +61,7 @@ product details:
 - Swiper
 - AOS
 - ShadCN
+- SEO
 
 ## Installation
 
