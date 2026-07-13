@@ -8,17 +8,22 @@ https://digital-online-shop.netlify.app/
 
 ##Screen shots:
 home page:
-<img width="1200" height="596" alt="f" src="https://github.com/user-attachments/assets/86f30490-f9c8-4226-8c1c-a297d914e7f8" />
-p-admin:
-<img width="1200" height="583" alt="e" src="https://github.com/user-attachments/assets/4e194654-33be-4271-a921-fd44bad0fe6c" />
-p-admin/addProducts:
-<img width="1200" height="608" alt="d" src="https://github.com/user-attachments/assets/e2aa8281-fc18-4868-b3c2-66f0a768a324" />
-p-admin/orders:
-<img width="1200" height="551" alt="c" src="https://github.com/user-attachments/assets/87093f76-c4e7-4c78-8cc7-0298f35b5634" />
-cart:
-<img width="1200" height="584" alt="b" src="https://github.com/user-attachments/assets/ca9cacfc-3973-440c-9afc-8b196d758459" />
-product details:
 <img width="1200" height="582" alt="a" src="https://github.com/user-attachments/assets/98436888-9a0b-46b9-8d1d-836086d10871" />
+
+p-admin:
+<img width="1200" height="584" alt="b" src="https://github.com/user-attachments/assets/ca9cacfc-3973-440c-9afc-8b196d758459" />
+
+p-admin/addProducts:
+<img width="1200" height="551" alt="c" src="https://github.com/user-attachments/assets/87093f76-c4e7-4c78-8cc7-0298f35b5634" />
+
+p-admin/orders:
+<img width="1200" height="608" alt="d" src="https://github.com/user-attachments/assets/e2aa8281-fc18-4868-b3c2-66f0a768a324" />
+
+cart:
+<img width="1200" height="583" alt="e" src="https://github.com/user-attachments/assets/4e194654-33be-4271-a921-fd44bad0fe6c" />
+
+product details:
+<img width="1200" height="596" alt="f" src="https://github.com/user-attachments/assets/86f30490-f9c8-4226-8c1c-a297d914e7f8" />
 
 ## Features:
 
