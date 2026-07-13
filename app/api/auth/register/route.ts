@@ -36,7 +36,7 @@ try {
     email:newUser.email,
     role:newUser.role
   },process.env.JWT_SECRET! ,{
-    expiresIn:"30d"
+    expiresIn:"7d"
   })
  response.cookies.set("token" , token ,{
   httpOnly:true ,
