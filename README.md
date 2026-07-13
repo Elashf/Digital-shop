@@ -6,6 +6,10 @@ The project includes both a customer-facing storefront and a complete admin dash
 
 https://digital-online-shop.netlify.app/
 
+##Screen shots:
+<img width="1888" height="917" alt="a" src="https://github.com/user-attachments/assets/a258656a-a3bb-4742-818a-52352084d613" />
+
+
 ## Features:
 
 ### Customer
