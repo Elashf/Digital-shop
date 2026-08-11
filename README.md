@@ -173,23 +173,7 @@ Open:
 
 http://localhost:3000
 
----
 
-📸 Screenshots
-
-🏠 Home Page
-
-🛍️ Product Details
-
-🛒 Shopping Cart
-
-👨‍💼 Admin Dashboard
-
-➕ Add Product
-
-📦 Orders
-
----
 
 🌐 Live Demo
 
