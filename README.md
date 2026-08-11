@@ -4,6 +4,7 @@ A full-stack e-commerce web application built with Next.js (App Router), TypeScr
 ## 🌐 Live Demo
 
 🚀 [**View Live Demo →**](https://digital-online-shop.netlify.app/)
+> **Note:** The live demo may require a VPN when accessed from Iran due to regional network restrictions.
 
 ##Screenshots:
 home page:
