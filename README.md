@@ -1,11 +1,7 @@
+🛒 Digital Shop
+A full-stack e-commerce web application built with Next.js (App Router), TypeScript, MongoDB, and Tailwind CSS. The project includes a complete customer-facing storefront and a full admin dashboard for managing the store — built to practice real-world full-stack development including authentication, database design, API routes, and role-based dashboards.
 
-# Digital Shop
-
-A full-stack e-commerce web application built with **Next.js**, **TypeScript**, **MongoDB**, and **Tailwind CSS**.  
-The project includes both a customer-facing storefront and a complete admin dashboard for managing the store.
-
-#Live Demo:
-https://digital-online-shop.netlify.app/
+🔗 Live Demo: digital-online-shop.netlify.app
 
 ##Screen shots:
 home page:
@@ -26,75 +22,69 @@ cart:
 product details:
 <img width="1200" height="596" alt="f" src="https://github.com/user-attachments/assets/86f30490-f9c8-4226-8c1c-a297d914e7f8" />
 
-## Features:
+✨ Features
+👤 Customer
+🔐 User authentication (Register / Login) with JWT
+🔎 Browse & search products
+📦 Product detail pages
+🛒 Shopping cart
+❤️ Wishlist
+📝 Place orders & view order history
+💬 Comments & reviews on products
+🧾 Personal user dashboard
+👨‍💼 Admin
+📊 Store statistics dashboard
+🛍️ Product management (Create / Update / Delete)
+👥 User management
+📦 Order management
+💬 Comment moderation
+🛠️ Tech Stack
+Frontend
+Next.js (App Router)
+TypeScript
+Tailwind CSS
+ShadCN UI
+Swiper
+AOS (Animate On Scroll)
+React Toastify
+Backend
+Next.js API Routes
+MongoDB
+Mongoose
+JWT Authentication
+🧠 Concepts Practiced
+This project focuses on real-world full-stack development, including:
+Next.js App Router & Server/Client Components
+REST API design with Next.js Route Handlers
+MongoDB schema design with Mongoose
+JWT-based authentication & authorization
+Role-based access control (User vs Admin)
+Protected routes & middleware
+State management across dashboards
+Form handling & validation
+Responsive, mobile-first UI design
+Reusable component architecture with ShadCN
 
-### Customer
+🔄 Application Flow
+Authentication
+Login / Register
+      ↓
+API Route (/api/auth)
+      ↓
+Validate + Hash Password
+      ↓
+Generate JWT
+      ↓
+Store in Cookie
+      ↓
+Middleware verifies on protected routes
 
-- User authentication (Register / Login)
-- Browse products
-- Search products
-- Product details
-- Shopping cart
-- Wishlist
-- Order placement
-- Order history
-- Comments & Reviews
-- User dashboard
 
-### Admin
 
-- Dashboard
-- Product management (Create, Update, Delete)
-- User management
-- Order management
-- Comment management
-- View store statistics
 
-## Tech Stack
 
-- Next.js (App Router)
-- TypeScript
-- MongoDB
-- Mongoose
-- Tailwind CSS
-- JWT Authentication
-- React Toastify
-- Swiper
-- AOS
-- ShadCN
-- SEO
 
-## Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/Elashf/Digital-shop.git
-```
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Create a `.env.local` file and add the required environment variables:
-
-```env
-MONGODB_URI=your_mongodb_uri
-JWT_SECRET=your_secret
-```
-
-Run the development server:
-
-```bash
-npm run dev
-```
-
-## Deployment
-
-The project is deployed on Netlify:
-https://digital-online-shop.netlify.app
-Note: Due to regional network restrictions, the live demo may not be accessible from some locations.
-
-Developed by Ela Farahani.
+👩‍💻 Author
+Ela Farahani
+Full-Stack Developer | Next.js & TypeScript
+⭐ If you find this project useful, consider giving it a star!
