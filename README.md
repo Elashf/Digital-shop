@@ -1,9 +1,11 @@
 🛒 Digital Shop
-A full-stack e-commerce web application built with Next.js (App Router), TypeScript, MongoDB, and Tailwind CSS. The project includes a complete customer-facing storefront and a full admin dashboard for managing the store — built to practice real-world full-stack development including authentication, database design, API routes, and role-based dashboards.
+A full-stack e-commerce web application built with Next.js (App Router), TypeScript, MongoDB ,Mongoose, ShadCN UI and Tailwind CSS. The project includes a complete customer-facing storefront and a full admin dashboard for managing the store — built to practice real-world full-stack development including authentication, database design, API routes, and role-based dashboards.
 
-🔗 Live Demo: digital-online-shop.netlify.app
+## 🌐 Live Demo
 
-##Screen shots:
+🚀 [**View Live Demo →**](https://digital-online-shop.netlify.app/)
+
+##Screenshots:
 home page:
 <img width="1200" height="582" alt="a" src="https://github.com/user-attachments/assets/98436888-9a0b-46b9-8d1d-836086d10871" />
 
@@ -120,29 +122,6 @@ Access Protected Route
 
 ---
 
-📂 Project Structure
-
-Digital-shop/
-├── app/
-│   ├── api/
-│   ├── dashboard/
-│   ├── products/
-│   └── ...
-│
-├── components/
-│   └── ui/
-│
-├── lib/
-├── models/
-├── public/
-├── utils/
-│
-├── package.json
-├── next.config.ts
-├── tsconfig.json
-└── README.md
-
----
 
 🚀 Getting Started
 
