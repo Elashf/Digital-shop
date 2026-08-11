@@ -91,24 +91,6 @@ Run the development server:
 npm run dev
 ```
 
-## Demo Admin Account
-
-If you'd like to explore the admin dashboard and all management features, you can log in using the following account:
-
-**Email**
-
-```text
-e@gmail.com
-```
-
-**Password**
-
-```text
-e123
-```
-
- This account is provided for demonstration purposes only.
-
 ## Deployment
 
 The project is deployed on Netlify:
